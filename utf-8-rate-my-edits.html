@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rate My Edits</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .edit-card {
+      background-color: #1e2329;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .edit-card iframe {
+      width: 100%;
+      height: 180px;
+      border-radius: 6px;
+    }
+    .edit-card h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
+    .edit-card p {
+      margin: 0.2rem 0;
+    }
+    .rating {
+      color: gold;
+    }
+    @media (max-width: 600px) {
+      .edit-card iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>📸 Rate My Edits</header>
+
+<div class="grid">
+  <div class="edit-card">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    <h3>Epic Neymar Edit</h3>
+    <p>by ToxicX</p>
+    <p class="rating">⭐ 4.5</p>
+  </div>
+
+  <div class="edit-card">
+    <iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID" allowfullscreen></iframe>
+    <h3>Cool Transitions</h3>
+    <p>by EditorGirl</p>
+    <p class="rating">⭐ 4.8</p>
+  </div>
+
+  <!-- Add more edit-cards here -->
+</div>
+
+</body>
+</html>
